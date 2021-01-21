@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Mystorage App</title>
+   <!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">	
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+        <script type="text/javascript" src="js/cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/dbHandler.js"></script>
+		
+	</head>
+	<body>
+		<div data-role ="header" data-theme="b">
+        <center><h1>Mystorage App</h1></center>
+		</div>
+        <center><h1>Login</h1></center>
+        <h3> Please fill the entry form comletely </h3>
+<div id="login">
+  <form>
+        <input type="text" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="button" id="btn_log" onclick="login()" value="Login" >	
+        <input type="reset" value="Reset" value="Clear">
+  </form>
+  <div data-role="footer" data-position="fixed"data-theme="b">
+		 <center><a href="regis.html"> I Have Not An Account</a></center>
+		 </div>
+		 
+        </div>
+        </div>
+   </body>
+</html>

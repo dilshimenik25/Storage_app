@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Mystorage App</title>
+   <!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">	
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+        <script type="text/javascript" src="js/cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/dbHandler.js"></script>
+		
+	</head>
+	<body>
+		<div data-role ="header" data-theme="b">
+        <center><h1>Mystorage App</h1></center>
+		 </div>
+		<center><h3>Storage space Finder</h3></center>
+        <h3> Please fill the entry form comletely </h3>
+        <div id="screen">
+  <form>
+            <input type="text" id ="txt_st" placeholder="Storage type " data-clear-btn="true" required><br>
+            <input type="text" id="txt_sm" placeholder="Dimensions in square meters " data-clear-btn="true" required><br>
+            <input type="date" id="txt_date" placeholder="Date" data-clear-btn="true" required><br>
+            <input type="time" id="txt_time" placeholder="time" data-clear-btn="true" required><br>
+            <input type="text" id="txt_sf" placeholder="Storage features " data-clear-btn="true" required><br>
+            <input type="text" id="txt_price" placeholder="Monthly rent price " data-clear-btn="true" required><br>
+			<input type="text" id="txt_note" placeholder="Notes " data-clear-btn="true"><br>
+			<input type="text" id="txt_rn" placeholder="Reporter Name " data-clear-btn="true"required><br>
+  
+           <a class="ui-btn ui-icon-plus ui-btn-icon-left" id="btn_add" onclick="add()"> Add</a>
+           <input type="reset" value="Reset" value="Clear">
+   </form>
+		</div>
+        
+		  <div data-role="footer" data-position="fixed"data-theme="b">
+		 <a href = "welocme.html"  class="ui-btn ui-icon-home ui-btn-icon-left" >Home</a>
+		 <a href = "editstorage.html"  class="ui-btn ui-icon-edit ui-btn-icon-left" >Edit</a>
+		 <a href = "viewstorage.html"  class="ui-btn ui-icon-action ui-btn-icon-left" >View</a>
+		 </div>
+   </body>
+</html>

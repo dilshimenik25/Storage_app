@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Mystorage App</title>
+   <!-- Include jQuery Mobile stylesheets -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">	
+		<!-- Include the jQuery library -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- Include the jQuery Mobile library -->
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
+        <script type="text/javascript" src="js/cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/dbHandler.js"></script>
+		
+	</head>
+	<body>
+		<div data-role ="header" id="view" data-theme="b">
+        <center><h1>Mystorage App</h1></center>
+		 </div>
+		<center><h3>More Storage Spaces </h3></center>
+        <div id="screen">
+        <form class="ui-filterable">
+                    <input data-type="search" id="txt_storage_type" placeholder="Storage Type">
+        </form>    
+		 <div data-role="head" class="ui-content">
+                <ul data-role="listview" data-filter="true" data-input="#txt_storage_type" data-inset="true" id="lstst">
+                </ul>
+				
+		 <center><a class="ui-btn ui-icon-delete ui-btn-icon-left ui-btn-inline" onclick="deleteevent()">Delete</a></center>
+		 <center><a class="ui-btn ui-icon-edit ui-btn-icon-left ui-btn-inline" href="#notetDialog" data-rel="dialog">Add Notes</a></center>
+		 </div>
+		 </div>
+
+		 <div data-role="header" id="noteDialog">
+            <div data-role="one">
+                <h3>Add Notes</h3>
+            </div>
+            <div data-role="head" class="ui-content">
+                <input type="text" id="txt_Notes" data-clear-btn="true">
+               <center> <a class="ui-btn ui-icon-plus ui-btn-icon-left" id="btn_addNotes" onclick="updateNotes()">Update Notes</a></center>
+            </div>
+        </div>
+		 <div id="footer" >
+		 <div data-role="footer" data-position="fixed"data-theme="b">
+		 <a href = "welocme.html"  class="ui-btn ui-icon-home ui-btn-icon-left" >Home</a>
+		 <a href = "editstorage.html"  class="ui-btn ui-icon-edit ui-btn-icon-left" >Edit</a>
+		 
+		 </div>
+		 </div>
+		 
+   </body>
+</html>
